@@ -2,15 +2,13 @@
 
 import os
 
-def isValid_command(command):
-    if len(command) > 0:
-        return command[0].isalnum()
-    return False
+def is_valid_command(command):
+    return len(command) > 0:
 
 while True:
     line = input('> ').split()
     
-    if not isValid_command(line):
+    if not is_valid_command(line):
         continue
 
     pid = os.fork()
