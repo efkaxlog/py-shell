@@ -3,7 +3,7 @@
 import os
 
 def is_valid_command(command):
-    return len(command) > 0:
+    return len(command) > 0
 
 while True:
     line = input('> ').split()
